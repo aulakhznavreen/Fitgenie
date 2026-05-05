@@ -24,7 +24,7 @@ if (!geminiApiKey) {
 }
 
 const genAI = new GoogleGenerativeAI(geminiApiKey);
-const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro' });
 
 app.get('/api/hello', (req: Request, res: Response) => {
   res.json({ message: 'Hello from server!' });
