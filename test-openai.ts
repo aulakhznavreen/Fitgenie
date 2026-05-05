@@ -14,7 +14,7 @@ async function testGemini() {
   const genAI = new GoogleGenerativeAI(apiKey);
 
   // *** CHANGE THIS LINE ***
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash-latest' }); // Use the latest stable text model
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' }); // Use the latest stable text model
 
   console.log(`Attempting to connect to Gemini API with model: ${model.model}`);
 
